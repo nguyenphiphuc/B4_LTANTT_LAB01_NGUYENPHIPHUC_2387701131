@@ -1,82 +1,51 @@
-\# 🛡️ BÀI THỰC HÀNH SỐ 01: LẬP TRÌNH CƠ BẢN VỚI PYTHON
+# 🛡️ BÀI THỰC HÀNH SỐ 01: LẬP TRÌNH CƠ BẢN VỚI PYTHON
+> **Môn học:** Lập Trình An Toàn Thông Tin  
+> **Sinh viên thực hiện:** Nguyễn Phi Phúc  
+> **Mã số sinh viên (MSSV):** 2387701131  
+> **Repository:** [B4_LTANTT_LAB01_NGUYENPHIPHUC_2387701131](https://github.com/nguyenphiphuc/B4_LTANTT_LAB01_NGUYENPHIPHUC_2387701131)
 
-> \*\*Môn học:\*\* Lập Trình An Toàn Thông Tin  
+---
 
-> \*\*Sinh viên thực hiện:\*\* Nguyễn Phi Phúc  
+## 📌 Giới thiệu dự án
+Repository này lưu trữ toàn bộ mã nguồn bài thực hành **Lab 01: Lập trình cơ bản với ngôn ngữ Python**, bao gồm:
+* **Phần 1.1: Cài đặt môi trường & Ví dụ khởi động** (`ex01`)
+* **Phần 1.2: Lập trình Python cơ bản** (`ex02`)
+* **Phần 1.3: Cấu trúc dữ liệu List, Tuple, Dictionary** (`ex03`)
+* **Phần 1.4: Lập trình hướng đối tượng (OOP)** (`ex04`)
 
-> \*\*Mã số sinh viên (MSSV):\*\* 2387701131  
+---
 
-> \*\*Repository:\*\* \[B4\_LTANTT\_LAB01\_NGUYENPHIPHUC\_2387701131](https://github.com/nguyenphiphuc/B4\_LTANTT\_LAB01\_NGUYENPHIPHUC\_2387701131)
-
-
-
-\---
-
-
-
-\## 📌 Giới thiệu dự án
-
-Repository này lưu trữ mã nguồn và tài liệu giải các bài tập thực hành trong \*\*Lab 01: Lập trình cơ bản với ngôn ngữ Python\*\*, bao gồm:
-
-1\. \*\*Phần 1.2: Lập trình Python cơ bản\*\* (Xử lý biến, nhập/xuất, cấu trúc rẽ nhánh, vòng lặp, chuỗi, mảng 2 chiều và hàm).
-
-2\. \*\*Phần 1.3: Cấu trúc dữ liệu nâng cao\*\* (Thao tác với List, Tuple, Dictionary và List Comprehension).
-
-
-
-\---
-
-
-
-\## 🗂️ Cấu trúc thư mục (Project Structure)
-
-
+## 🗂️ Cấu trúc thư mục (Project Structure)
 
 ```text
-
-b3\_python/
-
+NguyenPhiPhuc_2387701131_Source/
 │
-
-├── ex02/                           # Phần 1.2: Lập trình Python cơ bản
-
-│   ├── ex02\_01.py                  # Câu 01: Nhập tên, tuổi và in lời chào
-
-│   ├── ex02\_02.py                  # Câu 02: Tính diện tích hình tròn (bán kính r)
-
-│   ├── ex02\_03.py                  # Câu 03: Kiểm tra số chẵn/lẻ
-
-│   ├── ex02\_04.py                  # Câu 04: Tìm số chia hết cho 7 nhưng không là bội của 5 trong đoạn \[2000, 3200]
-
-│   ├── ex02\_05.py                  # Câu 05: Tính lương thực lĩnh nhân viên (tính giờ làm thêm vượt chuẩn)
-
-│   ├── ex02\_06.py                  # Câu 06: Khởi tạo mảng 2 chiều X x Y với giá trị \[i \* j]
-
-│   ├── ex02\_07.py                  # Câu 07: Nhập chuỗi đa dòng và chuyển đổi sang chữ in hoa
-
-│   ├── ex02\_08.py                  # Câu 08: Lọc các số nhị phân 4 bit chia hết cho 5
-
-│   ├── ex02\_09.py                  # Câu 09: Hàm kiểm tra số nguyên tố
-
-│   └── ex02\_10.py                  # Câu 10: Hàm đảo ngược chuỗi
-
+├── ex01/                           # Phần 1.1: Khởi động chương trình Python đầu tiên
+│   └── ex01_01.py (hoặc hello.py)  # In lời chào mừng "Hello, World!" và thông tin cá nhân
 │
-
-├── ex03/                           # Phần 1.3: List, Tuple, Dictionary
-
-│   ├── ex03\_01.py                  # Câu 01: Tính tổng các số chẵn trong một List
-
-│   ├── ex03\_02.py                  # Câu 02: Đảo ngược vị trí các phần tử trong List
-
-│   ├── ex03\_03.py                  # Câu 03: Tạo Tuple từ một List nhập từ bàn phím
-
-│   ├── ex03\_04.py                  # Câu 04: Truy cập phần tử đầu tiên và cuối cùng của Tuple
-
-│   ├── ex03\_05.py                  # Câu 05: Đếm tần suất xuất hiện các từ và lưu vào Dictionary
-
-│   └── ex03\_06.py                  # Câu 06: Xóa phần tử khỏi Dictionary theo khóa (Key)
-
+├── ex02/                           # Phần 1.2: Lập trình Python cơ bản (Câu 01 - Câu 10)
+│   ├── ex02_01.py                  # Câu 01: Nhập họ tên, tuổi và in lời chào
+│   ├── ex02_02.py                  # Câu 02: Tính diện tích hình tròn với bán kính r
+│   ├── ex02_03.py                  # Câu 03: Kiểm tra một số là số chẵn hay số lẻ
+│   ├── ex02_04.py                  # Câu 04: Tìm số chia hết cho 7 nhưng không là bội của 5 [2000, 3200]
+│   ├── ex02_05.py                  # Câu 05: Tính lương thực lĩnh nhân viên (tính giờ làm thêm 150%)
+│   ├── ex02_06.py                  # Câu 06: Tạo mảng 2 chiều X x Y với giá trị phần tử i * j
+│   ├── ex02_07.py                  # Câu 07: Nhập nhiều dòng văn bản và chuyển đổi thành chữ in hoa
+│   ├── ex02_08.py                  # Câu 08: Lọc các số nhị phân 4 chữ số chia hết cho 5
+│   ├── ex02_09.py                  # Câu 09: Hàm kiểm tra số nguyên tố
+│   └── ex02_10.py                  # Câu 10: Hàm đảo ngược chuỗi
 │
-
+├── ex03/                           # Phần 1.3: Thao tác List, Tuple, Dictionary (Câu 01 - Câu 06)
+│   ├── ex03_01.py                  # Câu 01: Tính tổng các số chẵn trong một List
+│   ├── ex03_02.py                  # Câu 02: Đảo ngược thứ tự các phần tử trong danh sách
+│   ├── ex03_03.py                  # Câu 03: Tạo Tuple từ một List nhập từ bàn phím
+│   ├── ex03_04.py                  # Câu 04: Truy cập phần tử đầu tiên và cuối cùng trong Tuple
+│   ├── ex03_05.py                  # Câu 05: Đếm tần suất xuất hiện các từ và lưu vào Dictionary
+│   └── ex03_06.py                  # Câu 06: Xóa phần tử khỏi Dictionary theo khóa (Key)
+│
+├── ex04/                           # Phần 1.4: Lập trình hướng đối tượng OOP
+│   ├── SinhVien.py                 # Khai báo lớp SinhVien với các thuộc tính và xếp loại
+│   ├── QuanLySinhVien.py           # Lớp nghiệp vụ quản lý (Thêm, sửa, xóa, tìm kiếm, sắp xếp)
+│   └── Main.py                     # Chương trình chính với Menu điều hướng tương tác
+│
 └── README.md                       # Tài liệu hướng dẫn và mô tả dự án
-
